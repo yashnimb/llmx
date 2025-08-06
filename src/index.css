@@ -46,4 +46,68 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+/* Style for each AI model toggle button */
+.model-option {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border-width: 1.5px;
+  border-style: solid;
+  display: inline-block;
+}
+
+/* Hide checkbox */
+.model-option input {
+  display: none;
+}
+
+/* ChatGPT button styles */
+.model-option.chatgpt {
+  border-color: #10a37f;
+  color: #10a37f;
+}
+.model-option.chatgpt.selected {
+  background-color: rgba(16, 163, 127, 0.2);
+}
+
+/* Claude button styles */
+.model-option.claude {
+  border-color: #8e44ad;
+  color: #8e44ad;
+}
+.model-option.claude.selected {
+  background-color: rgba(142, 68, 173, 0.2);
+}
+
+/* Gemini button styles */
+.model-option.gemini {
+  border-color: #1e88e5;
+  color: #1e88e5;
+}
+.model-option.gemini.selected {
+  background-color: rgba(30, 136, 229, 0.2);
+}
+
+/* Perplexity button styles */
+.model-option.perplexity {
+  border-color: #ff9800;
+  color: #ff9800;
+}
+.model-option.perplexity.selected {
+  background-color: rgba(255, 152, 0, 0.2);
+}
+
+/* Azure / Copilot button styles */
+.model-option.azure {
+  border-color: #0078d4;
+  color: #0078d4;
+}
+.model-option.azure.selected {
+  background-color: rgba(0, 120, 212, 0.2);
+}
 
