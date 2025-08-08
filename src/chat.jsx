@@ -9,7 +9,7 @@ const ChatUI = () => {
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef(null);
 
-  const webhookUrl = 'https://y4sh20.app.n8n.cloud/webhook/91b3d6c6-86a7-451a-8cf5-9f4be900bd1c';
+  const webhookUrl = 'https://yashnimb.app.n8n.cloud/webhook/91b3d6c6-86a7-451a-8cf5-9f4be900bd1c';
 
   const sendMessage = async () => {
     if (!input.trim()) return;
